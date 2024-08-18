@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "vscode:example": "node ./vscode-example/http.js",
+    "start": "node ./proxy.js",
+    "server": "npx http-server -S -C cert.pem -o -p 8080"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors-anywhere": "^0.4.4",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "prettier": "^3.3.3",
+    "vscode-web": "^1.91.1"
   }
 }
